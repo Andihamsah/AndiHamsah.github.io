@@ -1,0 +1,22 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
+.jumbotron .view img{
+    /* margin-left: 43%; */
+    margin-top: 200px;
+    width: 150px;
+}
+hr {
+    width: 250px;
+    border-top: 3px solid rgb(236, 6, 6) ;
+}
+
+
+section {
+    min-height: 600px;
+}
