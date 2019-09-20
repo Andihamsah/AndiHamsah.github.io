@@ -4,12 +4,13 @@ html {
 
 body {
     margin-bottom: 100px;
+    
 }
 
 .jumbotron .view img{
     /* margin-left: 43%; */
     margin-top: 200px;
-    width: 150px;
+    width: 100px;
 }
 hr {
     width: 250px;
@@ -18,10 +19,11 @@ hr {
 
 section {
     min-height: 600px;
+    margin-top: 200px;
 }
 
 .portofolio .row img{
-    width: 400px;
+    width: 350px;
 }
 .map-container-section {
   overflow:hidden;
@@ -45,12 +47,70 @@ footer {
     color: rgb(255, 30, 0);
     padding-top: 25px;
 }
+
 .overlay {
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background: rgb(0,0,59);
-z-index: 9999;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0);
+    z-index: 9999;
+    transition: .5s;   
+    text-align: center;
+    padding: 200px 0;
+
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgb(0,0,0,.8);
+    
+}
+
+.overlay img {
+    /* max-height: 100%; */
+    max-width: 650%;
+    box-shadow: 2px 2px 7px rgb(0,0,0,.8);
+}
+
+.overlay:target img{
+    animation: zoomdanfade .8s;
+}
+
+.overlay .close{
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    opacity: 0;
+}
+
+.overlay:target .close{
+    animation: slidedown .5s .5s forwards;
+}
+
+@keyframes zoomdanfade{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slidedown{
+    0% {
+        opacity: 0;
+        margin-top: -90px;
+    }
+    100% {        
+        opacity: 1;
+        margin-top: 0;
+    }
 }
