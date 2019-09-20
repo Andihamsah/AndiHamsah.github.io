@@ -7,10 +7,9 @@ body {
     
 }
 
-.jumbotron .view img{
-    /* margin-left: 43%; */
-    margin-top: 200px;
-    width: 100px;
+.jumbotron img{
+    /* margin-bottom: 200px; */
+    width: 200px;
 }
 hr {
     width: 250px;
@@ -19,7 +18,7 @@ hr {
 
 section {
     min-height: 600px;
-    margin-top: 200px;
+    margin-top: 350px;
 }
 
 .portofolio .row img{
