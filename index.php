@@ -8,3 +8,4 @@ if (isset($_POST['wa'])) {
         header("location: https://api.whatsapp.com/send?phone=628892907236&text=Assalamualaikum mamang hamsah%0ANama: ".$nama."%0AEmail: ".$email."%0ASubject: ".$subject."%0AMessage: ".$message);
     }
 }
+?>
