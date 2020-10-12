@@ -23,6 +23,7 @@ section {
 
 .portofolio .row img{
     width: 350px;
+    margin-bottom: 30px;
 }
 .map-container-section {
   overflow:hidden;
@@ -81,6 +82,9 @@ footer {
     animation: zoomdanfade .8s;
 }
 
+.overlay:target p{
+    animation: zoomdanfade .8s;
+}
 .overlay .close{
     position: absolute;
     top: 150px;
